@@ -1,0 +1,29 @@
+<view  class="item" wx:for="{{list}}" value="{{index}}" wx:if="{{loading && list.length > 0}}" >
+  <view class='item-box' data-index="{{index}}"  bindtap='redirectHandler'> 
+    <view>
+      <text class='item-name'>{{item.name}}</text>
+      <text>{{item.phone}}</text>
+      <text wx:if="{{item.isDefault == 'Y'}}" class='item-tag'>默认</text>
+    </view>
+    <view class='item-subtitle'>
+      <text class='item-name'>{{item.cityArea}}</text>
+      <text>{{item.address}}</text>
+    </view>
+  </view>
+  <view class='item-box-footer'>
+    <text data-index="{{index}}" bindtap='editHandler' class='item-box-footer-desc'>编辑</text>
+    <text data-id="{{item.id}}"  bindtap='deleteHandler' class='item-box-footer-desc'>删除</text>
+  <!-- <image bindtap='deleteHandler' class='item-icon' src='/images/icon-delete.png'></image> -->
+  </view>
+  
+</view>
+<view wx:if="{{loading && list.length == 0}}">
+  <view class='address'>
+    <image class='address-img' src='/images/icon-address.png'></image>
+    <view class='address-text'>您还没有添加地址</view>
+  </view>
+</view>
+<view class='item-button'>
+  <navigator class='button' url="/pages/addr/editor/index?goodsId={{goodsId}}">添加地址</navigator>
+</view>
+

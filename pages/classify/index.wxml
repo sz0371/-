@@ -1,0 +1,14 @@
+<scroll-view class="siderbar" scroll-y>
+  <view data-num='{{index}}' wx:for="{{tabs}}"  wx:for-item="item" class="siderbar-item {{tab == index ? 'active': ''}}" bindtap='switchTab'>{{item.name}}</view>
+</scroll-view>
+
+<scroll-view class='content' scroll-y>
+  <view class='content-box'>
+    <image src="{{item.wapImageUrl}}" class='content-banner'></image>
+    <!-- 列表 -->
+    <navigator url="/pages/index/search/index?name={{item.name}}" hover-class="none" class='content-item' wx:for="{{list}}">
+      <image src="{{item.imageUrl}}" class='content-item-image'></image>
+      <view class='content-item-text'>{{item.name}}</view>
+    </navigator>
+  </view>
+</scroll-view>

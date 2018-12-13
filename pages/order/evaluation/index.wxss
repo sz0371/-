@@ -1,0 +1,31 @@
+.textarea {
+  height: 120px;
+  font-size: 18px;
+  padding: 8px 24px;
+  width: 100%;
+  background-color: #FCFCFC;
+}
+.btn {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: #3A3A3A;
+  height: 49px;
+  line-height: 49px;
+  text-align: center;
+}
+.orderBox {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding-left: 24px;
+  margin-top: 20px;
+}
+.wux-rater {
+  flex: 1;
+}
+.wux-rater__box {
+  display: inline-block;
+}

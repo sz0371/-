@@ -1,0 +1,111 @@
+/* banner */
+.momey {
+  height: 99px;
+  line-height: 99px;
+  background-color: #424242;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.momey-number {
+  font-size: 40px;
+  padding-left: 24px;
+  display: inline-block;
+}
+.momey-desc {
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 8px;
+}
+/* tab */
+.tabs {
+  position: fixed;
+  top: 99px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.tab {
+  font-size: 14px;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+  flex: 1;
+  background-color: #424242;
+  color: #fff;
+}
+.tab.active {
+  background-color:#fff; 
+  color: #424242;
+}
+.section-momey {
+  margin:140px 24px 0;
+  padding-bottom: 60px;
+}
+.section-momey-title {
+  font-size: 18px;
+  color: #2B2B2B;
+  padding: 30px 0 17px;
+}
+.section-momey-desc {
+  width: 49%;
+  display: inline-block;
+  vertical-align: center;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  line-height: 70px;
+  height: 70px;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #404040;
+}
+.section-momey-desc:nth-child(odd) {
+  margin-right: 0;
+}
+.section-momey-desc.active {
+  background-color: #3C3C3C;
+  color: #fff;
+}
+.section-momey-confirm {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #3A3A3A;
+  text-align: center;
+  color: #fff;
+  height: 49px;
+  width: 100%;
+  line-height: 49px;
+}
+/* 支付明细 */
+.section-bills {
+  margin:140px 24px 0;
+  padding-bottom: 60px;
+}
+.section-bills-item {
+  border-bottom: 1px solid #E9E9E9;
+}
+.bills-item-header {
+  display: flex;
+  align-items: center;
+  padding-top: 11px;
+}
+.bills-item-title {
+  font-size: 16px;
+  flex: 1;
+}
+.bills-item-number {
+  font-size: 14px;
+  color: #AD1717;
+}
+.bills-item-body {
+  color: #666666;
+  font-size: 13px;
+  margin: 6px 0 14px;
+}

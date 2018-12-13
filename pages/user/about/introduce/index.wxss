@@ -1,0 +1,10 @@
+.section-image {
+  width: 100%;
+  height: 160px;
+}
+.section-detail {
+  font-size: 15px;
+  color: #A0A0A0;
+  text-indent: 30px;
+  margin: 25px 24px 25px;
+}

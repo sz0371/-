@@ -1,0 +1,76 @@
+/* banner */
+.momey {
+  height: 99px;
+  line-height: 99px;
+  background-color: #424242;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.momey-number {
+  font-size: 40px;
+  padding-left: 24px;
+  display: inline-block;
+}
+.momey-desc {
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 8px;
+}
+/* tab */
+.tabs {
+  position: fixed;
+  top: 99px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.tab {
+  font-size: 14px;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+  flex: 1;
+  background-color: #424242;
+  color: #fff;
+}
+.tab.active {
+  background-color:#fff; 
+  color: #424242;
+}
+/* 明细 */
+.section-bills {
+  margin:140px 24px 0;
+  padding-bottom: 60px;
+}
+.section-bills-item {
+  border-bottom: 1px solid #E9E9E9;
+}
+.bills-item-header {
+  display: flex;
+  align-items: center;
+  padding-top: 11px;
+}
+.bills-item-title {
+  font-size: 16px;
+  flex: 1;
+}
+.bills-item-number {
+  font-size: 14px;
+  color: #AD1717;
+}
+.bills-item-body {
+  color: #666666;
+  font-size: 13px;
+  margin: 6px 0 14px;
+}
+/* 积分规则 */
+.integral-detail {
+  font-size: 15px;
+  color: #A0A0A0;
+  text-indent: 30px;
+  padding-top: 22px;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "租赁",
+  "usingComponents": {
+    "Goods": "/components/goodsList/index"
+  }
+}

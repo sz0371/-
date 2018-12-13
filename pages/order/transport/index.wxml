@@ -1,0 +1,19 @@
+<view class="section-info">
+  <image src="/images/test/img-goods.png" class='section-image'></image>
+  <view class='section-content'>
+    <view class='section-text'>物流状态：已发货</view>
+    <view class='section-text'>承运来源：顺丰速运</view>
+    <view class='section-text'>运单编号：9891158224621</view>
+    <view class='section-text'>官方电话：11183</view>
+  </view>
+</view>
+<view class='section-timeline'>
+  <view class='timeline'>
+    <view class='timeline-header'></view>
+    <view class='timeline-body'>
+      <view class='timeline-title'>[杭州市]滨江浦沿集散中心 已发出</view>
+      <view class='timeline-time'>2018-01-29 20:23:17</view>
+    </view>  
+  </view>
+
+</view>

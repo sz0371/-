@@ -1,0 +1,41 @@
+<view class="momey">
+  <view class='momey-number'>{{integralAll}}</view>
+  <view class='momey-desc'>积分</view> 
+</view>
+<view class="tabs">
+  <view data-num='0' class="tab {{tab === 0 ? 'active' : ''}}" bindtap='switchTab'>积分明细</view>
+  <view data-num='1' class="tab {{tab === 1 ? 'active' : ''}}" bindtap='switchTab'>积分规则</view>
+</view>
+<!-- 积分明细 -->
+<view class='section-bills' wx:if="{{tab === 0}}">
+  <view class='section-bills-item' wx:for="{{list}}" wx:for-item="item">
+    <view class='bills-item-header'>
+      <view class='bills-item-title'>{{item.detail}}</view>
+      <view class='bills-item-number'>{{item.type == '1' ? '+' : '-'}} {{item.amount / 100}}</view>
+    </view>
+    <view class='bills-item-body'>{{item.createTime}}</view>
+  </view>
+  <!-- <view class='section-bills-item'>
+    <view class='bills-item-header'>
+      <view class='bills-item-title'>购买某某商品</view>
+      <view class='bills-item-number'>-55.00元</view>
+    </view>
+    <view class='bills-item-body'>2017-09-12 12:00</view>
+  </view>
+  <view class='section-bills-item'>
+    <view class='bills-item-header'>
+      <view class='bills-item-title'>购买某某商品</view>
+      <view class='bills-item-number'>-55.00元</view>
+    </view>
+    <view class='bills-item-body'>2017-09-12 12:00</view>
+  </view> -->
+</view> 
+<!-- 积分规则 -->
+<view class='section-bills' wx:if="{{tab === 1}}">
+  <view class='integral-detail'>
+    杭州田桔网络有限公司是一家国内领先的“互联网+”解决方案服务商，为在“互联网+”时代背景下，面临转型升级的企业提供全方位的策略咨询、技术建设、定制研发、网站制作、网站建设、移动网站制作、app开发和运营管理服务。从传统互联网到移动互联网，从传统软件到“互联网+平台，田桔网络已成长为一个优秀的企业级软件服务品牌，并正以先进的商业化技术理念，成熟的解决方案和专业的配套服务，引领和推动着中国企业级软件服务市场的变革。 
+  </view>
+  <view class='integral-detail'>
+    我们在产品设计、移动端开发、网站开发、网站建设上有深厚经验积累，服务过众多大型客户。田桔团队立足并深入于移动互联网整体解决方案领域，已经成为国内相关领域的领先者，能为客户提供包括移动互联网整体方案设计、移动互联网应用模块、大容量分布式系统架构、服务器集群架构部署、产品整个生命周期的代运营等全方面的服务。
+  </view>
+</view> 

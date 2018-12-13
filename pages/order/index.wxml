@@ -1,0 +1,60 @@
+<view class="tabs">
+  <!-- <view data-num="0" class='tab-item {{tab == 0 ? "active" : ""}}' bindtap='switchTab'><text class='text'>全部</text></view> -->
+  <view data-num="-1" class='tab-item {{tab == -1 ? "active" : ""}}' bindtap='switchTab'><text class='text'>待付款</text></view>
+  <view data-num="1" class='tab-item {{tab == 1 ? "active" : ""}}' bindtap='switchTab'><text class='text'>待发货</text></view>
+  <view data-num="3" class='tab-item {{tab == 3 ? "active" : ""}}' bindtap='switchTab'><text class='text'>待收货</text></view>
+  <view data-num="8" class='tab-item {{tab == 8 ? "active" : ""}}' bindtap='switchTab'><text class='text'>待评价</text></view>
+  <view data-num="-3" class='tab-item {{tab == -3 ? "active" : ""}}' bindtap='switchTab'><text class='text'>退款</text></view>
+</view>
+ <view class='section-box' wx:for="{{orderList}}" wx:for-item="item">
+  <view class='section'>
+    <view class='section-header'>
+      <view class='section-serial'>订单编号：{{item.orderNo}}</view>
+      <view class='section-status' wx:if="{{item.orderState == -1}}">待付款</view>
+      <view class='section-status' wx:if="{{item.orderState == 1}}">待发货</view>
+      <view class='section-status' wx:if="{{item.orderState == 3}}">待收货</view>
+      <view class='section-status' wx:if="{{item.orderState == 8}}">待评价</view>
+      <view class='section-status' wx:if="{{item.orderState == -3}}">退款</view>
+    </view>
+    <view class='section-body' wx:for="{{item.products}}" wx:for-item="product">
+      <image src="{{product.productImage}}" class='section-image'></image>
+      <view class='section-content'>
+        <view class='section-title'>{{product.productName}}</view>
+        <view class='section-desc'>{{product.standardDataKeyName || ''}}</view>
+        <view class='section-rate'>
+          <view>
+            <text class='section-marker'>￥</text>
+            <text class='section-price'>{{product.productPrice}}</text>
+          </view>
+          <view class='section-amount'>x{{product.buyNum}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='section-footer'>
+      <view class='section-total'>共{{item.products.length}}件商品，合计: ￥{{item.payPrice}}</view>
+      <view class='section-operation'>
+        <view  wx:if="{{item.orderState == -1}}">
+          <view data-id="{{item.orderId}}" bindtap='cancelOrderTap' class='btn'>取消</view>
+          <view data-id="{{item.orderId}}" data-money="item.payPrice" bindtap='toPayTap' class='btn primary'>立即付款</view>
+        </view>      
+        <view wx:if="{{item.orderState == 1}}">
+          <view data-id="{{item.orderId}}" bindtap='refundTap' class='btn'>退款</view>
+          <navigator class='btn primary' url='/pages/order/transport/index' hover-class="none">查看物流</navigator>
+        </view>
+        <view wx:if="{{item.orderState == 3}}">
+          <view data-id="{{item.orderId}}" bindtap='makesureTap' class='btn primary'> 确认收货</view>
+        </view>
+        <view wx:if="{{item.orderState == 8}}">
+          <navigator hover-class="none" url='/pages/order/evaluation/index' class='btn primary'>评价</navigator>
+        </view>
+        <view wx:if="{{item.orderState == 9}}">
+          <view class='btn primary'>已评价</view>
+        </view>
+        <view wx:if="{{item.orderState == -2}}">
+          <view data-id="{{item.orderId}}" bindtap='deleteTap' class='btn primary'>删除订单</view>
+        </view>
+        <!-- <view data-id="{{item.orderId}}"  class='btn primary' bindtap='gotoEvaluation'>评价</view> -->
+      </view>
+    </view>
+  </view>
+</view> 

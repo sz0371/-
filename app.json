@@ -1,0 +1,77 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/search/index",
+    "pages/classify/index",
+    "pages/hots/index",
+    "pages/lease/index",
+    "pages/basket/index",
+    "pages/goods/index",
+    "pages/goods/buynow/index",
+    "pages/shop-cart/index",
+    "pages/address-add/index",
+    "pages/select-address/index",
+    "pages/template-cart/index",
+    "pages/to-pay-order/index",
+    "pages/success/index",
+    "pages/order/index",
+    "pages/order/detail/index",
+    "pages/order/confirm/index",
+    "pages/order/transport/index",
+    "pages/order/evaluation/index",
+    "pages/order/return/index",
+    "pages/addr/index",
+    "pages/addr/editor/index",
+    "pages/user/index",
+    "pages/user/wallet/index",
+    "pages/user/integral/index",
+    "pages/user/service/index",
+    "pages/user/about/index",
+    "pages/user/about/introduce/index",
+    "pages/user/about/contact/index",
+    "pages/user/about/members/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#3A3A3A",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "backgroundColor": "#000",
+    "selectedColor": "#fff",
+    "color": "#A1A1A1",
+    "borderStyle": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon-select.png",
+        "selectedIconPath": "images/icon-select-active.png",
+        "text": "精选"
+      },
+      {
+        "pagePath": "pages/classify/index",
+        "iconPath": "images/icon-classify.png",
+        "selectedIconPath": "images/icon-classify-active.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/lease/index",
+        "iconPath": "images/icon-lease.png",
+        "selectedIconPath": "images/icon-lease-active.png",
+        "text": "租赁"
+      },
+      {
+        "pagePath": "pages/shop-cart/index",
+        "iconPath": "images/icon-basket.png",
+        "selectedIconPath": "images/icon-basket-active.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "images/icon-user.png",
+        "selectedIconPath": "images/icon-user-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

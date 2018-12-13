@@ -1,0 +1,13 @@
+<scroll-view scroll-x>
+   <view class="topbar">
+    <view class='topbar-content'>
+      <view data-num='{{index}}' wx:for="{{tabs}}"  wx:for-item="item" class='topbar-item {{tab == index ? "active" : ""}}' bindtap='switchTab'>{{item.name}}</view>
+    </view>
+    <!-- <view class='topbar-icon'>
+      <image src='/images/icon-down.png' class='topbar-image'></image>
+    </view>  -->
+  </view>  
+</scroll-view>
+<view class='content'> 
+  <Goods list="{{list}}"></Goods>
+</view>

@@ -1,0 +1,67 @@
+/* 侧边栏 */
+.siderbar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 102px;
+  z-index: 1;
+  background-color:#F0F0F0;
+}
+.siderbar-item {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: #A1A1A1;
+  background-color: #F0F0F0;
+  padding: 0 12px;
+  overflow: hidden;
+}
+.siderbar-item.active {
+  background-color: #fff;
+  color: #3A3A3A;
+}
+.siderbar-item.active:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 60px;
+  background-color: #3A3A3A;
+}
+/* 右侧边栏 */
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0; 
+  width: 100%;
+}
+.content-box {
+  margin-left: 102px;
+  padding: 0 10px;
+}
+.content-banner {
+  width: 100%;
+  height: 107px;
+  margin-top: 12px;
+  margin-bottom: 23px;
+}
+.content-item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 33%;
+  margin-bottom: 26px;
+}
+.content-item-image {
+  width: 71px;
+  height: 71px;
+}
+.content-item-text {
+  color: #656565;
+  font-size: 13px;
+}

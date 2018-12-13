@@ -1,0 +1,98 @@
+<!-- banner -->
+
+<view class='first-photo'>
+  <swiper>
+    <block wx:for="{{goods.photoAlbum}}" wx:for-item="item">   
+      <swiper-item>
+        <image src="{{item}}" class='banner'></image>
+      </swiper-item>
+    </block> 
+  </swiper>
+  <view class='first-photo-marker'>
+    <view class='first-photo-icon'>视频</view>
+    <view class='first-photo-icon first-photo-album'>图片</view>
+  </view>
+</view>
+
+<!-- 商品title -->
+<view class='goods'>
+  <view class='goods-name'>{{goods.name}}</view>
+  <view class='goods-desc'>{{goods.intro}}</view>
+  <view class='goods-price'>￥{{goods.marketPrice}}</view>
+  <view class='goods-sales'></view>
+</view>
+<view class='bar'></view>
+<!-- 用户评价 -->
+<view class="evaluation"> 
+  <view class='evaluation-title'>
+    <view class='evaluation-title-left'>用户评价 {{commentsCount}}</view>
+    <view class='evaluation-title-right'>98%好评</view>
+  </view> 
+  <view class='evalution-body'>
+      <view class='evalution-item' wx:for="{{comments}}" wx:for-item="item">
+      <view class='evalution-item-header'>
+        <image src="{{item.userHeadImg}}" class='evalution-item-image'></image>
+        <view>
+          <view class='evalution-item-name'>{{item.userName}}</view>
+          <view class='evalution-item-time'>{{item.createTime}}</view>  
+        </view>        
+      </view>
+      <view class='evalution-item-body'>{{item.content}}</view>
+    </view>  
+  </view>
+</view> 
+<view class='bar'></view>
+<!-- 商品详情 -->
+<view class='detail'>
+  <view class='detail-title'>商品详情</view>
+  <import src="../../wxParse/wxParse.wxml"/>  
+  <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:imagesList.nodes}}"/> 
+  </view>
+</view>
+
+<!-- 购物车 -->
+<view class='basket'>
+  <view class='basket-shop'>
+    <image class='basket-shop-img' src="/images/icon-backet.png"></image>
+  </view>
+  <view class='basket-buy-new' data-num="立即购买" bindtap='selectStandard'>立即购买</view>
+  <view class='basket-join-basket' data-num="加入购物车" bindtap="selectStandard">加入购物车</view>
+</view>
+
+<view class='basket-modal {{isBasket ? "active" : ""}}'>
+  <view class='basket-modal-mask' bindtap='cancleStandard'></view>
+  <view class='basket-modal-box'>
+    <view class='basket-modal-box-header'>
+      <view class='basket-modal-box-title'>
+        <image src="{{goods.productImage}}" class='basket-modal-image'></image>
+      </view>
+      <view class='basket-modal-box-info'>
+        <view class='basket-modal-info-title'>{{goods.name}}</view>
+        <view class='basket-modal-info-desc'>{{goods.intro}}</view>
+        <view class='basket-modal-price-box'>
+          <view class='basket-modal-info-price'>￥{{goods.marketPrice}}</view>
+          <view class='basket-modal-counter'>
+            <image src="/images/icon-reduce.png" class='basket-modal-icon' bindtap='cutNumber'></image>
+            <input type='number' class='basket-modal-input' value="{{number}}"></input>
+            <image src="/images/icon-add.png" class='basket-modal-icon' bindtap='addNumber'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='basket-modal-box-body'>
+      <view class='basket-modal-body-item' wx:for="{{standard.keyNamesGroup}}" wx:for-item="item" wx:for-index="idx">
+          <view class='basket-modal-item-title'>{{item}}</view>
+          <view class='basket-modal-item-tags'>
+            <view class='basket-modal-item-tag {{selectTags[idx+1] == tag  ? "active" : ""}}' data-tag="{{tag}}" data-index="{{item}}" bindtap="chooseStandard"  wx:for="{{standard.keyValuesGroup[idx]}}" wx:for-item="tag" >{{tag}}</view>
+          </view>
+      </view>  
+    </view>
+    <view class='basket-modal-btn' bindtap="submitBuyBtn">确定</view>
+  </view>  
+</view>
+
+<!-- 租赁 -->
+<view class='lease'>
+  <view class='lease-shop'></view>
+</view>

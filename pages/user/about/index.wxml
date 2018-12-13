@@ -1,0 +1,12 @@
+<navigator class="section" hover-class="none" url="/pages/user/about/introduce/index">
+  <view class='section-title'>公司介绍</view>
+  <image src="/images/icon-right.png" class='section-image'></image>
+</navigator>
+<navigator class="section" hover-class="none" url="/pages/user/about/contact/index">
+  <view class='section-title'>联系方式</view>
+  <image src="/images/icon-right.png" class='section-image'></image>
+</navigator>
+<!-- <navigator class="section" hover-class="none" url="/pages/user/about/members/index">
+  <view class='section-title'>会员机制</view>
+  <image src="/images/icon-right.png" class='section-image'></image>
+</navigator> -->

@@ -1,0 +1,37 @@
+.goods {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  text-align: center;
+  margin-top: 10px;
+}
+.image {
+  height: 150px;
+  width: 150px;
+}
+.linespilt {
+  width: 10px;
+  height: 1px;
+  background-color: #000;
+  margin: 11px auto 0;
+}
+.title {
+  color: #2B2B2B;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.desc {
+  color: #8C8C8C;
+  font-size: 11px;
+  margin-top: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  padding: 0 10px;
+}
+.price {
+  color: #101010;
+  font-size: 14px;
+  font-weight: 600;
+}

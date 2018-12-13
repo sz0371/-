@@ -1,0 +1,10 @@
+
+<navigator url="/pages/goods/index?id={{item.id}}" class='goods' hover-class="none" wx:for="{{list}}" wx:for-item="item">
+  <image src='{{item.productImage}}' class='image'></image>
+  <view class='linespilt'></view>
+  <view class='title'>{{item.name}}</view>
+  <view class='desc'>{{item.intro}}</view>
+  <view class='price'>
+    ￥{{item.price}}
+  </view>
+</navigator>

@@ -1,0 +1,82 @@
+page {
+  display: block;
+  min-height: 100%;
+  background-color: #F3F3F3;
+} 
+
+.section {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E6E6E6;
+  font-size: 14px;
+}
+.section-title {
+  padding: 0 16px;
+  width: 42px;
+  color: #222;
+  line-height: 52px;
+}
+.section-input {
+  flex: 1;
+  line-height: 52px;
+  height: 52px;
+  padding-left: 16px;
+}
+.section-picker {
+  flex: 1;
+  line-height: 52px;
+  height: 52px;
+  padding-left: 16px;
+}
+.section-area {
+  width: 100%;
+  padding: 16px;
+  font-size: 15px;
+  border-bottom: 1px solid #E6E6E6;
+  box-sizing: border-box;
+}
+.section-radio {
+  text-align: center;
+}
+.radio {
+  margin: 0 auto;
+  width:200px;
+  font-size: 12px;
+  color:#222;
+}
+checkbox {
+  transform: scale(0.7);
+  display: inline-block;
+  vertical-align: middle;
+}
+.raido-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* 按钮 */
+button {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
+  background-color: #3A3A3A;
+  color: #fff;
+}
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+  color:rgba(0, 0, 0, 0.3);
+  background-color:#3A3A3A;
+}
+button::before {
+  display: none;
+}
+button::after {
+  display: none;
+}
+.button-hover {
+  background-color: #3A3A3A;
+  color: #fff;
+}
+.other-button-hover {
+  background-color: #3A3A3A;
+  color: #fff;
+}

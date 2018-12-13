@@ -1,0 +1,178 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "wxbb812ea4670d30b6",
+	"projectname": "geek_miniapp",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/index/search/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/classify/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "租赁",
+					"pathName": "pages/lease/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/user/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的钱包",
+					"pathName": "pages/user/wallet/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的积分",
+					"pathName": "pages/user/integral/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/user/about/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "公司介绍",
+					"pathName": "pages/user/about/introduce/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "联系方式",
+					"pathName": "pages/user/about/contact/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的订单",
+					"pathName": "pages/order/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "物流跟踪",
+					"pathName": "pages/order/transport/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地址管理",
+					"pathName": "pages/addr/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加地址",
+					"pathName": "pages/addr/editor/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/user/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/goods/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/shop-cart/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "确认订单",
+					"pathName": "pages/to-pay-order/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "新增地址",
+					"pathName": "pages/address-add/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "选择收货地址",
+					"pathName": "pages/select-address/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订单状态",
+					"pathName": "pages/order-list/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订单列表",
+					"pathName": "pages/order-list/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的订单列表",
+					"pathName": "pages/order/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的积分",
+					"pathName": "pages/user/integral/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发表评论",
+					"pathName": "pages/order/evaluation/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}

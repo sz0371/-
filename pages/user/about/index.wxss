@@ -1,0 +1,17 @@
+.section {
+  padding: 0 24px;
+  height: 43px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E9E9E9;
+}
+.section-title {
+  font-size: 15px;
+  color: #3F3F3F;
+  flex: 1;
+}
+.section-image {
+  width: 8px;
+  height: 15px;
+}

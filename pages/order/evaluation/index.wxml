@@ -1,0 +1,13 @@
+<import src="../../../templates/rater/rater.wxml" />
+
+<textarea class='textarea' placeholder="请在此输入商品评价，分享给想买的他们吧"></textarea>
+
+<view class="orderBox">
+ <view>订单评价：</view>
+  <view>
+    <template is="rater" data="{{ ...$wux.rater.star }}" />
+  </view>
+</view>
+
+
+<view class='btn' bindtap='onEvaluation'>提交</view>

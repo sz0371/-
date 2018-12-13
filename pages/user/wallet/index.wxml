@@ -1,0 +1,42 @@
+<view class="momey">
+  <view class='momey-number'>{{allIncome}}</view>
+  <view class='momey-desc'>元</view> 
+</view>
+<view class="tabs">
+  <view data-num='0' class="tab {{tab === 0 ? 'active' : ''}}" bindtap='switchTab'>钱包充值</view>
+  <view data-num='1' class="tab {{tab === 1 ? 'active' : ''}}" bindtap='switchTab'>支付明细</view>
+</view>
+<!-- 钱包充值 -->
+<view class='section-momey' wx:if="{{tab === 0}}">
+  <view class='section-momey-title'>充值金额</view>
+  <view data-card="10" class='section-momey-desc {{card == 10 ? "active" : ""}}' bindtap='switchCard'>充值10元</view>
+  <view data-card="20" class='section-momey-desc {{card == 20 ? "active" : ""}}' bindtap='switchCard'>充值20元</view>
+  <view data-card="30" class='section-momey-desc {{card == 30 ? "active" : ""}}' bindtap='switchCard'>充值30元</view>
+  <view data-card="50" class='section-momey-desc {{card == 50 ? "active" : ""}}' bindtap='switchCard'>充值50元</view>
+  <view data-card="100" class='section-momey-desc {{card == 100 ? "active" : ""}}' bindtap='switchCard'>充值100元</view>
+</view>
+<view class='section-momey-confirm' bindtap='payment' wx:if="{{tab === 0}}">确认支付</view>
+<!-- 支付明细 -->
+<view class='section-bills' wx:if="{{tab === 1}}">
+  <view class='section-bills-item' wx:for="{{list}}" wx:for-item="item"  wx:if="{{list.length > 0}}">
+    <view class='bills-item-header'>
+      <view class='bills-item-title'>{{item.detail}}</view>
+      <view class='bills-item-number'>{{item.type == '1' ? '+' : '-'}} {{item.amount / 100}}元</view>
+    </view>
+    <view class='bills-item-body'>{{item.createTime}}</view>
+  </view>
+  <!-- <view class='section-bills-item'>
+    <view class='bills-item-header'>
+      <view class='bills-item-title'>购买某某商品</view>
+      <view class='bills-item-number'>-55.00元</view>
+    </view>
+    <view class='bills-item-body'>2017-09-12 12:00</view>
+  </view>
+  <view class='section-bills-item'>
+    <view class='bills-item-header'>
+      <view class='bills-item-title'>购买某某商品</view>
+      <view class='bills-item-number'>-55.00元</view>
+    </view>
+    <view class='bills-item-body'>2017-09-12 12:00</view>
+  </view> -->
+</view> 

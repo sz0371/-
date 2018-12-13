@@ -1,0 +1,42 @@
+<view class="user-info">
+  <image src="{{userInfo.avatarUrl}}" class='user-info-avatar'></image>
+  <view class='user-info-text'>{{userInfo.nickName}}</view>
+</view>
+<view class='list'>
+  <navigator class='list-item' hover-class="none" url="/pages/order/index">
+    <image src="/images/icon-user-order.png" class='list-item-image'></image>
+    <view class='list-item-text'>我的订单</view>
+    <view class='list-item-desc'>订单服务</view>
+    <image src="/images/icon-user-right.png" class='list-item-icon'></image>
+  </navigator>
+  <navigator class='list-item' hover-class="none" url="/pages/user/wallet/index">
+    <image src="/images/icon-user-wallet.png" class='list-item-image'></image>
+    <view class='list-item-text'>我的钱包</view>
+    <view class='list-item-desc'>充值享积分</view>
+    <image src="/images/icon-user-right.png" class='list-item-icon'></image>
+  </navigator>
+  <navigator class='list-item' hover-class="none" url="/pages/user/integral/index">
+    <image src="/images/icon-user-integral.png" class='list-item-image'></image>
+    <view class='list-item-text'>我的积分</view>
+    <view class='list-item-desc'>积分服务</view>
+    <image src="/images/icon-user-right.png" class='list-item-icon'></image>
+  </navigator>
+  <!-- <navigator class='list-item' hover-class="none" url="/pages/user/service/index">
+    <image src="/images/icon-user-service.png" class='list-item-image'></image>
+    <view class='list-item-text'>共享服务</view>
+    <view class='list-item-desc'>积分可换购</view>
+    <image src="/images/icon-user-right.png" class='list-item-icon'></image>
+  </navigator> -->
+  <navigator class='list-item' hover-class="none" url="/pages/select-address/index">
+    <image src="/images/icon-user-local.png" class='list-item-image'></image>
+    <view class='list-item-text'>地址管理</view>
+    <view class='list-item-desc'>地址服务</view>
+    <image src="/images/icon-user-right.png" class='list-item-icon'></image>
+  </navigator>
+  <navigator class='list-item' hover-class="none" url="/pages/user/about/index">
+    <image src="/images/icon-user-about.png" class='list-item-image'></image>
+    <view class='list-item-text'>关于我们</view>
+    <view class='list-item-desc'>点击了解极客数码</view>
+    <image src="/images/icon-user-right.png" class='list-item-icon'></image>
+  </navigator>
+</view>

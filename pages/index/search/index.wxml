@@ -1,0 +1,33 @@
+<view class='wrap'>
+  <view class='search'>
+    <image class='image' src="/images/icon-search.png"></image>
+    <input class='input' placeholder-class="placeholder"  type='text' focus='{{true}}' placeholder="热门产品搜素" confirm-type="search" bindconfirm="searchEvent" value="{{input}}"></input>
+  </view>
+  <navigator open-type="navigateBack"  hover-class="none" class="desc" url="/pages/index/index">取消</navigator>
+</view>
+
+<view wx:if="{{list.length == 0}}">
+  <!-- 热门搜索 -->
+   <!-- <view class='search-box'>
+    <view class='search-box-header'>
+      <view class='search-box-title'>热门搜索</view>
+    </view>
+    <view class='search-box-body'>
+      <text class='search-box-tag'>Apple Watch</text>
+      <text class='search-box-tag'>Apple Watch</text>
+      <text class='search-box-tag'>Apple Watch</text>
+      <text class='search-box-tag'>Apple Watch</text>
+    </view>
+  </view>  -->
+  <!-- 历史搜索 -->
+   <view class='search-box'>
+    <view class='search-box-header'>
+      <view class='search-box-title'>历史搜索</view>
+    </view>
+    <view class='search-box-body'>
+      <text bindtap='searchRecord' data-name="{{item.searchName}}" class='search-box-tag' wx:for="{{searchRecord}}" wx:for-item="item">{{item.searchName}}</text>
+    </view>
+  </view> 
+ </view> 
+<!-- 搜索结果 -->
+<Goods list="{{list}}"></Goods>

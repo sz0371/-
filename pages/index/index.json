@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "极客数码",
+  "usingComponents": {
+    "Goods": "/components/goodsList/index",
+    "Search": "/components/searchBar/index"
+  }
+}

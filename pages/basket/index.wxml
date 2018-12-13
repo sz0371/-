@@ -1,0 +1,49 @@
+<!-- <view class='section-box'>
+  <view class='section' wx:for="{{list}}" wx:for-item="item">
+    <view class='section-body'>
+      <view class='section-icon'>
+        <image class='icon-image' src="/images/icon-label.png"></image>
+      </view>
+      <view class='section-image'>
+        <image class='goods-image'  src="{{item.productImage}}"></image>
+      </view>
+      <view class='section-content'>
+        <view class='section-content-header'>
+          <view class='section-content-title'>{{item.productName}}</view>
+          <view class='section-edit'>删除</view>
+        </view>
+        <view class='section-content-body'>{{item.standardKeyName}}</view>
+        <view class='section-content-footer'>
+          <view class='price'>￥{{item.productPrice * number}}</view>
+          <view class='control'>
+            <image class='icon-image-control' src="/images/icon-reduce.png"></image>
+            <input type="number" value='{{number}}'></input>
+            <image class='icon-image-control' src="/images/icon-add.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    </view>
+</view> -->
+
+<view class='section-box'>
+  <basketGoods wx:for="{{list}}" buyIt="buyGoods" wx:for-item="item" item="{{item}}"></basketGoods>
+</view>
+
+
+
+
+<!-- 计算价格 -->
+<view class='wrap'>
+  <view class="box">
+    <view class='box-header'>
+      <image class='icon-image' src="/images/icon-label.png"></image>
+      <view class='box-choose'>全选</view>
+      <view class='box-all'>合计</view>
+      <view class="box-price">￥245.80</view>
+    </view>
+    <view class='box-body'>
+      <view class='box-button'>结算</view>
+    </view>
+  </view> 
+</view>

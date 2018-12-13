@@ -1,0 +1,13 @@
+<image src="/images/test/img-about-banner.png" class='section-image'></image>
+<view class='section'>
+  <view class='section-title'>公司地址</view>
+  <view class='section-content'>浙江省 杭州市 滨江区 浦沿街道 六和路368号 海创基地北路b3019</view>
+</view>
+<view class='section'>
+  <view class='section-title'>联系电话</view>
+  <view class='section-content'>13333559966 1568977665</view>
+</view>
+<view class='section'>
+  <view class='section-title'>公司邮箱</view>
+  <view class='section-content'>594444444@123.com</view>
+</view>

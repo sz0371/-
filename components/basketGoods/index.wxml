@@ -1,0 +1,26 @@
+
+<view class='section'>
+    <view class='section-body'>
+      <view class='section-icon'>
+        <image class='icon-image' src="/images/icon-label.png"></image>
+      </view>
+      <view class='section-image'>
+        <image class='goods-image'  src="{{item.productImage}}"></image>
+      </view>
+      <view class='section-content'>
+        <view class='section-content-header'>
+          <view class='section-content-title'>{{item.productName}}</view>
+          <view class='section-edit'>删除</view>
+        </view>
+        <view class='section-content-body'>{{item.standardKeyName}}</view>
+        <view class='section-content-footer'>
+          <view class='price'>￥{{item.productPrice * number}}</view>
+          <view class='control'>
+            <image class='icon-image-control' src="/images/icon-reduce.png" bindtap='_cutNumber'></image>
+            <input type="number" value='{{number}}'></input>
+            <image class='icon-image-control' src="/images/icon-add.png" bindtap='_addNumber'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

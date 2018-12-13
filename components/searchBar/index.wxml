@@ -1,0 +1,7 @@
+<view class='wrap'>
+  <view class='search'>
+    <image class='image' src="/images/icon-search.png"></image>
+    <input class='input' placeholder-class="placeholder"  type='text' focus="{{bindFocus}}" placeholder="热门产品搜素" confirm-type="search" bindconfirm="searchEvent" ></input>
+  </view>
+  <navigator wx:if="{{cancle}}" open-type="navigateBack"  hover-class="none" class="desc" url="/pages/index/index">取消</navigator>
+</view>

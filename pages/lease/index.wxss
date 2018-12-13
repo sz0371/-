@@ -1,0 +1,68 @@
+/* 顶部导航 */
+scroll-view {
+  height: 34px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  white-space: nowrap; 
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F4F4F4;
+  background-color: #fff;
+  z-index: 999;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+}
+.topbar-content {
+  /* padding-right: 42px; */
+}
+.topbar-item {
+  display: inline-block;
+  vertical-align: center;
+  margin: 0 14px;
+  height: 34px;
+  line-height: 34px;
+  color: #A1A1A1;
+  font-size: 14px;
+}
+.topbar-item.active {
+   position: relative; 
+  color: #3A3A3A;
+}
+.topbar-item.active:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px; 
+  width: 100%;
+  background-color: #3A3A3A;
+}
+.topbar-icon {
+  position: fixed;
+  right: 0;
+  width: 42px;
+  height: 34px;
+  text-align: center;
+  background-color: #fff;
+}
+.topbar-icon:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 16px;
+  background-color: #D9D9D9;
+  transform: translateY(-50%);
+}
+.topbar-image {
+  width: 12px;
+  height: 7px;
+}
+.content {
+  margin-top: 34px;
+  padding-bottom: 10px;
+}

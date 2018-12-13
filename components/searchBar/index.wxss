@@ -1,0 +1,31 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  background-color: #F4F4F4;
+  padding: 8px 16px;
+}
+.search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.image {
+  width: 17px;
+  height: 17px;
+  margin: 0 13px 0 6px;
+}
+.input {
+  font-size: 15px;
+  height: 32px;
+  line-height: 32px;
+}
+.desc {
+  margin-left: 10px;
+  color: #2B2B2B;
+  font-size: 18px;
+}
+.placeholder {
+  color: #D2D2D2;
+}

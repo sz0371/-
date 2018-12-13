@@ -1,0 +1,35 @@
+<navigator class='wrap' url="/pages/index/search/index">
+  <view class='search'>
+    <image class='image' src="/images/icon-search.png"></image>
+    <input class='input' placeholder-class="placeholder"  type='text'  placeholder="热门产品搜素" confirm-type="search" ></input>
+  </view>
+</navigator>
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" indicator-color="indicatorColor" indicator-active-color="#fff">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.adImage}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 热门推荐 -->
+<view class='hots-box'>
+  <view class='hots-header'>
+    <view class='hots-title'>热门推荐</view>
+    <image src="/images/icon-right.png" class='hots-icon'></image>
+  </view>
+  <view class='hots-body'>
+     <image src="/images/test/img-hots-banner.png" class='hots-image'></image>
+  </view>
+  <Goods list="{{recommendList}}"></Goods>
+</view>
+<!-- 热门租赁 -->
+<view class='hots-box'>
+  <view class='hots-header'>
+    <view class='hots-title'>热门租赁</view>
+    <image src="/images/icon-right.png" class='hots-icon'></image>
+  </view>
+  <view class='hots-body'>
+   <image src="/images/test/img-hots-banner1.png" class='hots-image'></image>
+  </view> 
+  <Goods list="{{leaseList}}"></Goods>
+</view>
